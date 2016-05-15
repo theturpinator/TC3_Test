@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 tools:context="com.cognitiveperformancegroup.tc3_version_11.SituationialJudgmentTestContext"
+	android:orientation="vertical"
+	android:layout_margin="10dp">
+
+	<!-- TODO: Update blank fragment layout -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Context"/>
+
+	<TextView
+		android:id="@+id/context"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Your Platoon is conducting security operations within the area. Your Squad is the main effort and a Medic/Corpsman has been attached. You are the Squad Leader.\n\n"/>
+
+	<TextView
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Situation"/>
+
+	<TextView
+		android:id="@+id/situation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Today, your Squad is operating in a village where a militant rebel faction is known to operate. As a result, the civilians might be somewhat hostile toward US forces. Your Squad has been augmented with four members of the Host Nation Security Forces (HNSF). As part of your mission, you are collecting information about the pattern of life. This information and other intelligence will improve the Platoon's situational awareness. Other Squads from your platoon are also conducting combat patrols, and you are in radio contact.\n\nAs your patrol enter the marketplace the scene looks normal. There have been numerous reports of recent rebel activity in and around the village, so you are on alert for problems. There, the locals look up and then go about their business. There are families moving in and out of kiosks, the air is filled with music blaring from radios, and there is a smell of cooking meats and vegetables hanging over the area. Your Squad is noting these behaviors and reporting anomalies whenever they are observed. To your right, you notice a small group of young adult males walking through the crowd some distance from your position. The crowd begins to break up and move away from the teens.\n\n"/>
+
+
+
+</LinearLayout>

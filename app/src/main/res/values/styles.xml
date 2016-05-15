@@ -1,0 +1,51 @@
+<resources>
+
+	<!-- Base application theme, not in use currently.  --><style name="AppTheme"
+	parent="Theme.AppCompat.Light.NoActionBar">
+	<!-- Customize your theme here. -->
+	<item name="colorPrimary">@color/colorPrimary</item>
+	<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	<item name="colorAccent">@color/colorAccent</item>
+</style>
+
+	<style name="AlertTitleText2">
+		<item name="android:textColor">#F8A219</item>
+		<item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+	</style>
+
+	<style name="TC3AlertDialog2"
+		parent="Theme.AppCompat.Dialog.Alert">
+
+		<item name="android:colorAccent">#F8A219</item>
+		<item name="android:windowTitleStyle">@style/AlertTitleText2</item>
+
+	</style>
+
+	<style name="AlertTitleText">
+		<item name="android:textColor">#448CCB</item>
+		<item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+	</style>
+
+	<style name="TC3AlertDialog"
+		parent="Theme.AppCompat.Dialog.Alert">
+
+		<item name="android:colorAccent">#448CCB</item>
+		<item name="android:windowTitleStyle">@style/AlertTitleText</item>
+
+	</style>
+
+	<style name="CalendarTheme"
+		parent="android:Theme.Material.Light.Dialog">
+
+		<item name="android:colorAccent">#F8A219</item>
+
+	</style>
+
+
+	<style name="PopupOverlay"
+		parent="ThemeOverlay.AppCompat.Light"/>
+
+	<style name="AppBarOverlay"
+		parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</resources>

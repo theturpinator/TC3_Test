@@ -1,0 +1,171 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#3C3C3C">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#000077">
+
+                <Button
+                    android:id="@+id/menu_button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/menu_button"/>
+
+                <TextView
+                    android:id="@+id/domain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Domain: TC3"/>
+
+                <TextView
+                    android:id="@+id/scenario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="60dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Scenario: "/>
+
+                <TextView
+                    android:id="@+id/event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="60dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event: "/>
+
+                <Button
+                    android:id="@+id/kct_save_and_exit"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/save_and_exit"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="#3777C0">
+
+                <TextView
+                    android:id="@+id/event_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event Description: "/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/backButton"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_button"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_toEndOf="@id/left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/middle"
+                        android:layout_width="665dp"
+                        android:layout_height="wrap_content"
+                        android:background="#AFAFAF"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/outer_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/right"
+                    android:layout_toEndOf="@id/scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/nextButton"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_button"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="70dp"
+        android:choiceMode="singleChoice"
+        android:divider="#666"
+        android:dividerHeight="1dp"
+        android:background="#ffa406"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        />
+
+</android.support.v4.widget.DrawerLayout>
+

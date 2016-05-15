@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFAFAF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/main_header"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_toEndOf="@id/left"
+        android:orientation="vertical"
+        android:layout_width="667dp"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:layout_width="298dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/what_training_day_is_it"
+            ></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/day1Button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gold_button"
+                android:layout_marginRight="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="Day 1"/>
+
+            <Button
+                android:id="@+id/day2Button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gold_button"
+                android:layout_marginRight="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="Day 2"/>
+
+            <Button
+                android:id="@+id/day3Button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gold_button"
+                android:layout_marginRight="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="Day 3"/>
+
+            <Button
+                android:id="@+id/day4Button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gold_button"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="Day 4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Which session?"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <Spinner
+                android:id="@+id/am_pm_dropdown"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:spinnerMode="dropdown"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toEndOf="@id/middle"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>
